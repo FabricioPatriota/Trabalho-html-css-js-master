@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Batalha na terra média (Explicação)
+    </title>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="csstrabalho.css">
+        <h1 class="titulo">Batalhas na Terra-Média</h1>
+        <nav class="nav-bar">
+            <div>&nbsp;
+                <a href="inicio.html">Página Principal</a>
+                <a href="personagens.html">Criação de Personagens</a>
+                <a href="autor.html">Autor da página</a>
+            </div> 
+        </nav>
+    </head>
+    <body class="body">
+        <div class="explicacao-jogo">
+            <h2 class="titulos-exp">Personagens e Cenários</h2>
+            <p class="exp-jogo">O jogo de batalha entre personagens baseados na Terra-Média que é o mundo do 
+                Senhor dos Anéis. A batalha ocorre por turnos de forma automática no formato de todos 
+                contra todos, considerando as características dos personagens. Cada personagem é de uma 
+                nação e possui 5 habilidades, conforme descrito a seguir.
+            </p>
+            <p class="exp-jogo">As habilidades que os personagens possuem são força, velocidade, precisão, 
+                armadura e recuperação. Além da nacionalidade e das 5 habilidades, o personagem possui 
+                seus pontos de energia e um nome para identificá-lo ao longo de suas interações no jogo. 
+                No início do jogo, o personagem possui 100 pontos de energia e outros 100 pontos de 
+                habilidades que devem ser distribuídos entre as habilidades da forma que o jogador 
+                preferir.
+            </p>
+            <ul class="lista-container">
+                <li class="lista-exp">Força: a capacidade que o personagem possui de infringir danos no adversário no 
+                    combate a curta distância;</li>
+                <li class="lista-exp">Precisão: a precisão denota a capacidade na qual o personagem tem para infringir 
+                    danos no adversário à longa distância;</li>
+                <li class="lista-exp">Velocidade: o tempo no qual o personagem leva para se aproximar do adversário;</li>
+                <li class="lista-exp">Armadura: o quanto reduz o impacto dos ataques do adversário, independente da 
+                    distância na qual os ataques são realizados;</li>
+                <li class="lista-exp">Recuperação: a capacidade de recuperar pontos para a próxima batalha.</li>
+            </ul>
+            <p class="exp-jogo">Neste jogo, foram selecionadas as seguintes nações da Terra-Média: Orc Snaga,
+                Uruk-hai, Cavaleiro de Rohan, Guerreiro de Gondor, Hobbit, Elfo da Floresta, Elfo de 
+                Lothlórien e anão. A casa de cada nação é, respectivamente, Cirith Ungol, Portão Negro, 
+                Abismo de Helm, Minas Tirith, O Condado, Floresta das Trevas ou Mirkwood, Caras 
+                Galadhon ou Cidade das Árvores e Colinas de Ferro. A Tabela 1 descreve a ligação entre 
+                cada nação e a sua casa.
+            </p>
+            <table class="tabelas">
+                <h6 class="h6-exp">Tabela 1: Relação nação x casa</h6>
+                <thead class="tabelas-thead">
+                  <tr>
+                      <th class="tabelas-thead">Nação</th>
+                      <th class="tabelas-thead">Casa</th>
+                  </tr>
+                </thead>
+                <tbody class="tabelas-tbody">
+                  <tr>
+                    <td class="tabelas-tbody">Orc Snaga</td>
+                    <td class="tabelas-tbody">Cirith Ungol</td>
+                  </tr>
+                  <tr>
+                    <td class="tabelas-tbody">Uruk-Hai</td>
+                    <td class="tabelas-tbody">Portão Negro</td>
+                  </tr>
+                  <tr>
+                    <td class="tabelas-tbody">Cavaleiro de Rohan</td>
+                    <td class="tabelas-tbody">Abismo de Helm</td>
+                  </tr>
+                  <tr>
+                    <td class="tabelas-tbody">Guerreiro de Gondor</td>
+                    <td class="tabelas-tbody">Minas Tirith</td>
+                  </tr>
+                  <tr>
+                    <td class="tabelas-tbody">Hobbit</td>
+                    <td class="tabelas-tbody">O condado</td>
+                  </tr>
+                  <tr>
+                    <td class="tabelas-tbody">Elfo da Floresta</td>
+                    <td class="tabelas-tbody">Floresta das Trevas</td>
+                  </tr>
+                  <tr>
+                    <td class="tabelas-tbody">Elfo de Lothlórien</td>
+                    <td class="tabelas-tbody">Caras Galadhon</td>
+                  </tr>
+                  <tr>
+                    <td class="tabelas-tbody">Anão</td>
+                    <td class="tabelas-tbody">Colinas de Ferro</td>
+                  </tr>
+                </tbody>
+            </table>
+            <h2 class="titulos-exp">Saiba mais</h2>
+            <div id="comandos">
+                <button type="button" onclick="escreveSnaga()">Orc Snaga</button>
+                <button type="button" onclick="escreveUruk()">Uruk-Hai</button>
+                <button type="button" onclick="escreveRohan()">Cavaleiro de Rohan</button>
+                <button type="button" onclick="escreveGondor()">Guerreiro de Gondor</button>
+                <button type="button" onclick="escrevehobbit()">hobbit</button>
+                <button type="button" onclick="escreveFloresta()">Elfo da Floresta</button>
+                <button type="button" onclick="escreveLothlorien()">Elfo de Lothlórien</button>
+                <button type="button" onclick="escreveAnao()">Anão</button>
+            </div>
+            <div id="jsonTrabalho"></div>
+            <h2 class="titulos-exp">A Batalha</h2>
+            <p class="exp-jogo">A batalha é realizada em um cenário fixo no qual podem ser alocados até oito 
+                jogadores, sendo que só pode haver um personagem de cada nação. O cenário é fixo porque 
+                a batalha inteira ocorre neste único cenário escolhido. Dentre os cenários possíveis, o jogo 
+                pode definir qualquer uma das oito casas das nações.
+            </p>
+            <p class="exp-jogo">Não existem alianças e “amizades” entre os personagens, portanto eles se 
+                enfrentam em duelos de um contra o outro em cada rodada e o vencedor avança para a 
+                próxima rodada. No início da rodada, os personagens são distribuídos aleatoriamente em 
+                pares para realizarem a batalha e, caso a quantidade de personagens na batalha seja 
+                ímpar, um deles ficará fora da batalha e se classificará automaticamente para a rodada 
+                seguinte. Os vencedores de uma rodada são novamente distribuídos aleatoriamente para 
+                se enfrentarem em uma nova batalha. As rodadas são repetidas de acordo com a 
+                quantidade restante de personagens na arena, até que ocorra a batalha final e seja 
+                definido um personagem como o vencedor. O jogador que “sobrou” na rodada anterior não 
+                pode sobrar novamente na rodada seguinte.
+            </p>
+            <img class="figuras" src="Figura1.png">
+            <h2 class="titulos-exp">O Duelo</h2>
+            <p class="exp-jogo">A batalha é realizada em turnos de duelos diretos entre dois personagens, conforme 
+                foi descrito anteriormente. Porém, é preciso descrever com mais detalhes como se deve 
+                determinar o vencedor de cada duelo.
+            </p>
+            <p class="exp-jogo">Antes, deve-se observar que um duelo possui como informações de entrada: o 
+                cenário da batalha e os dois personagens do confronto com as suas características. Após o 
+                confronto, a informação de saída é o vencedor do confronto com os danos que sofreu e 
+                infringiu.
+            </p>
+            <img class="figuras2" src="Figura2.png">
+            <p class="exp-jogo">O confronto ocorre em turnos no qual cada personagem faz uma jogada que pode 
+                ser ataque, defesa ou movimentação em direção ao adversário.
+            </p>
+            <p class="exp-jogo">O ataque é o golpe desferido pelo personagem no adversário. O golpe possui uma 
+                probabilidade de atingir o adversário e essa probabilidade é calculada de acordo com a sua 
+                habilidade naquele tipo de ataque. O ataque pode ser do tipo:
+            </p>
+            <ul class="lista-container">
+                <li class="lista-exp">ataque curto é o ataque no qual o jogador está entre zero e um passo de 
+                        distância do adversário;
+                </li>
+                <li class="lista-exp">ataque longo é o ataque no qual o jogador está entre dois e dez passos de 
+                        distância.
+                </li>
+            </ul>
+            <p class="exp-jogo">Considera-se que o ataque atingiu o adversário se ele estiver dentro do raio de ação 
+                dos tipos de ataques previstos. Portanto, não é possível realizar ataque em distância 
+                superior a dez passos. Caso o ataque atinja o adversário, o dano causado será calculado 
+                com base nos fatores: habilidade do personagem no tipo de ataque desferido, habilidade 
+                do adversário em realizar a defesa, se o adversário está realizando a defesa e bônus ou 
+                penalidades causadas pelo cenário da batalha.
+            </p>
+            <p class="exp-jogo">A defesa é a ação que o personagem realiza para se proteger e reduzir os danos 
+                causados por golpes que podem ser desferidos pelo adversário. A defesa possui uma 
+                probabilidade de reduzir o dano do ataque e essa probabilidade é calculada de acordo com 
+                a sua habilidade naquele tipo de ataque. A defesa pode ser do tipo:
+            </p>
+            <ul class="lista-container">
+                <li class="lista-exp">defesa curta é aquela que visa proteger o personagem do ataque curto 
+                    desferido pelo adversário;
+                </li>
+                <li class="lista-exp">defesa longa é aquela que visa proteger o personagem do ataque longo 
+                    desferido pelo adversário.
+                </li>
+            </ul>
+            <p class="exp-jogo">Considera-se que foi realizada a defesa se a ação do personagem é de defesa e se 
+                o adversário deferiu algum golpe contra ele. Caso ocorra a defesa, a redução do dano 
+                causado deve considerar o tipo de ataque recebido, habilidade do adversário no tipo de 
+                ataque desferido, a capacidade do personagem em realizar a defesa e bônus ou 
+                penalidades causadas pelo cenário da batalha.
+            </p>
+            <p class="exp-jogo">Movimentação: é o avanço do personagem na arena do confronto. Esse avanço se 
+                dá um passo por vez até que não existam mais passos entre o personagem e o adversário.
+            </p>
+            <h3>CONTINUA...</h3>
+        </div>
+        
+
+    </body>
+    <script src="jsTrabalho.js" charset="utf-8"></script>
+    <footer id="footer">
+        <div class="conteudo">
+            <h5 class="footer-text">Cursos de TI da Estácio de Taguatinga 2022.1</h5>
+            <p class="footer-text">Todos os direitos reservados. (Terra-Média, locais e personagens são direitos de <a href="https://www.middleearth.com/home.html">Tolkien Enterprises</a>).</p>
+        </div>
+    </footer>
+</html>

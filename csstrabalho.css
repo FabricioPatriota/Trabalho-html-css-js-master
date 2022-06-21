@@ -1,0 +1,202 @@
+#footer{
+    padding: 20px 0 20px;
+    background: darkgray;
+    position:relative;
+}
+.conteudo{
+    color: black;
+    text-align: center;
+}
+.footer-text{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.person-container{
+    display: grid;
+    grid-template-columns: 350px 400px;
+    grid-gap: 20px;
+    border: 5px solid darkgray;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 250px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.person-1{
+  border: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.person-2{
+}
+#crperson-container{
+    margin-left: 300px;
+    margin-right: 90px;
+    align-items: center;
+}
+.button{
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titulo-crperson{
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+    font-size:xx-large;
+
+}
+.nav-bar{
+    border: 5px solid darkgray;
+    margin-right: 900px;
+    word-spacing: 1,5px;
+    background-color: white;
+    color: black;
+}
+.body{
+    background-color: black;
+}
+.titulo{
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+    font-size:xx-large;
+}
+.Introducao-inicial{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.video-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 400px;
+    margin-bottom: 50px;
+}
+.intro-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 600px;
+    margin-right: 100px;
+}
+.Introducao-inicial{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.explicacao-jogo{
+    background-color: black;
+}
+.titulos-exp{
+    text-align: center;
+    background-color: black;
+    font-family: fantasy;
+    color: white;
+}
+.exp-jogo{
+    border: 5px solid darkgray;
+    background-color: white;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lista-container{
+    border: 5px solid darkgray;
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lista-exp{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.tabelas{
+    border: 2px solid darkgray;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.tabelas-thead{
+    border: 2px solid darkgray;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tabelas-tbody{
+    border: 2px solid darkgray;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h6-exp{
+    text-align: center;
+}
+.figuras{
+    border: 5px solid darkgray;
+    margin-left: 370px;
+}
+.figuras2{
+    border: 5px solid darkgray;
+    margin-left: 430px;
+}
+.h1-autor{
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    font-size:xx-large;
+
+}
+.h3-autor{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p-autor{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foto_autor{
+    margin-left: 570px;
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+#comandos{
+    border: 5px solid darkgray;
+    background-color: white;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#jsonTrabalho{
+    border: 5px solid darkgray;
+    background-color: white;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bntinclui_person{
+    display: grid;
+    grid-template-columns: 350px 400px;
+    grid-gap: 20px;
+    border: 5px solid darkgray;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 250px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.criaPerson{
+    display: grid;
+    grid-template-columns: 350px 400px;
+    grid-gap: 20px;
+    border: 5px solid darkgray;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 250px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}

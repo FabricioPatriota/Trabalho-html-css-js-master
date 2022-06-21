@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Batalha na terra média (Criação de personagem)
+    </title>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="csstrabalho.css">
+        <h1 class="titulo">Batalhas na Terra-Média</h1>
+        <nav class="nav-bar">
+            <div>&nbsp;
+                <a href="inicio.html">Página Principal</a>
+                <a href="explicacaojogo.html">Explicação do Jogo</a>
+                <a href="autor.html">Autor da página</a>
+            </div> 
+        </nav>
+    </head>
+    <body class="body">
+        <h1 class="titulo-crperson">Criação de personagens</h1>
+        <div id="crperson-container">
+            <div class="espaco">
+                <br>
+            </div>
+            <button type="button" onclick="adicionarPersonagem()">Adicionar personagem</button>
+            <div class="espaco">
+                <br>
+            </div>
+            <form class="crperson-form">
+                <div class="person-container">
+                    <div class="person-1">
+                            <input type="checkbox" id="pcd" name="check_personagem" value="incluir_personagem">
+                            <label for="incluir_personagem">Incluir este personagem na batalha</label>
+                        <div>
+                            <label for="nome_personagem">Nome</label>
+                            <input type="text" name="nome_personagem">
+                        </div>
+                        <p>Nação:</p>
+                        <div>
+                            <label for="anao">Anão</label>
+                            <input type="radio" id="anao" name="nacao" value="anao" checked>
+                        </div>
+                        <div>
+                            <label for="hobbit">Hobbit</label>
+                            <input type="radio" id="hobbit" name="nacao" value="hobbit" checked>
+                        </div>
+                        <div>
+                            <label for="cavaleiro">Cavaleiro de Rohan</label>
+                            <input type="radio" id="cavaleiro" name="nacao" value="cavaleiro" checked>
+                        </div>
+                        <div>
+                            <label for="guerreiro">Guerreiro de Gondor</label>
+                            <input type="radio" id="guerreiro" name="nacao" value="guerreiro" checked>
+                        </div>
+                        <div>
+                            <label for="elfo_floresta">Elfo da Floresta</label>
+                            <input type="radio" id="elfo_floresta" name="nacao" value="elfo_floresta" checked>
+                        </div>
+                        <div>
+                            <label for="elfo_lothlorien">Elfo de Lothlórien</label>
+                            <input type="radio" id="elfo_lothlorien" name="nacao" value="elfo_lothlorien" checked>
+                        </div>
+                        <div>
+                            <label for="orc">Orc Snaga</label>
+                            <input type="radio" id="orc" name="nacao" value="orc" checked>
+                        </div>
+                        <div>
+                            <label for="uruk">Uruk-Hai</label>
+                            <input type="radio" id="uruk" name="nacao" value="uruk" checked>
+                        </div> 
+                    </div>    
+                    <div class="person-2">
+                            <p>Habilidades:</p>
+                            <div>
+                                <label for="hab_forca">Força</label>
+                                <input type="number" name="hab_forca">
+                            </div>
+                            <div>
+                                <label for="hab_precisao">Precisão</label>
+                                <input type="number" name="hab_precisao">
+                            </div>
+                                <label for="hab_velocidade">Velocidade</label>
+                                <input type="number" name="hab_velocidade">
+                            <div>
+                                <label for="hab_armadura">Armadura</label>
+                                <input type="number" name="hab_armadura">
+                            </div>
+                            <div>
+                                <label for="hab_recuperacao">Recuperação</label>
+                                <input type="number" name="hab_recuperacao">
+                            </div>
+                    </div>
+                </div>
+            </form>        
+        </div>
+        <div class="espaco">
+            <br>
+        </div> 
+    </body>
+    <script src="jsTrabalho.js" charset="utf-8"></script>
+    <footer id="footer">
+        <div class="conteudo">
+            <h5 class="footer-text">Cursos de TI da Estácio de Taguatinga 2022.1</h5>
+            <p class="footer-text">Todos os direitos reservados. (Terra-Média, locais e personagens são direitos de <a href="https://www.middleearth.com/home.html">Tolkien Enterprises</a>).</p>
+        </div>
+    </footer>
+</html>
